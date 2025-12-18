@@ -8,7 +8,8 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install Python dependencies
-RUN pip3 install --no-cache-dir -r requirements.txt
+RUN \
+    pip3 install --no-cache-dir -r requirements.txt
 
 # Copy application files
 COPY main.py .
@@ -19,4 +20,3 @@ RUN chmod +x run.sh
 
 # Run the application
 CMD ["./run.sh"]
-
