@@ -1,0 +1,26 @@
+name: CGV Schedule Tracker
+version: "1.0.0"
+slug: cgv-schedule-tracker
+description: Monitor CGV movie schedules and get Telegram notifications when schedules open
+url: https://github.com/yourusername/cgv-schedule-tracker
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+init: false
+options:
+  telegram_bot_token: ""
+  telegram_chat_id: ""
+  target_date: "20251231"
+  movie_no: "30000774"
+  site_no: "0013"
+  check_interval: 60
+schema:
+  telegram_bot_token: str
+  telegram_chat_id: str
+  target_date: str
+  movie_no: str
+  site_no: str
+  check_interval: int
+
